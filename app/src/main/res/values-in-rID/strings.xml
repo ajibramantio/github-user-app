@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyGithubUserApp</string>
+    <string name="cari_user">Cari Pengguna</string>
+    <string name="move_to_detail">Rincian</string>
+    <string name="share">Bagikan</string>
+    <string name="change_language">Ganti Bahasa</string>
+    <string name="search">Cari</string>
+    <string name="hint">Cari Pengguna...</string>
+    <string name="intro">Tekan ikon cari untuk mencari.</string>
+    <string name="change_language_settings">Ganti Bahasa</string>
+    <string name="search_hint">Cari Pengguna...</string>
+    <string name="favorite">Favorit</string>
+    <string name="change_alarm">Nyalakan Alarm</string>
+    <string name="change_alarm_deactive">Matikan Alarm</string>
+    <string name="settings">Pengaturan</string>
+</resources>

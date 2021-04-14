@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Github User App</string>
+    <string name="cari_user">Find User</string>
+    <string name="github_name" translatable="false">github_name</string>
+    <string name="name_received" translatable="false">name_received</string>
+    <string name="username_received" translatable="false">username_received</string>
+    <string name="follower_received" translatable="false">follower_received</string>
+    <string name="following_received" translatable="false">following_received</string>
+    <string name="company_received" translatable="false">company_received</string>
+    <string name="location_received" translatable="false">location_received</string>
+    <string name="repository_received" translatable="false">repository_received</string>
+    <string name="github_list" translatable="false">Github List</string>
+    <string name="share">Share</string>
+    <string name="move_to_detail">Details</string>
+    <string name="github_username" translatable="false">Github Username</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="user_name" translatable="false">user_name</string>
+    <string name="user_follower" translatable="false">user_follower</string>
+    <string name="user_following" translatable="false">user_following</string>
+    <string name="tab_1" translatable="false">Following</string>
+    <string name="tab_2" translatable="false">Follower</string>
+    <string name="change_language">Change Language</string>
+    <string name="search">Search</string>
+    <string name="hint">Find user...</string>
+    <string name="intro">Click on the search icon to find.</string>
+    <string name="content_tab_followers" translatable="false">hello followers</string>
+    <string name="content_tab_following" translatable="false">hello following</string>
+    <string name="tab_text_1" translatable="false">Following</string>
+    <string name="tab_text_2" translatable="false">Followers</string>
+    <string name="change_language_settings">Change Language</string>
+    <string name="search_hint">Find user...</string>
+    <string name="favorite">favorite</string>
+    <string name="change_alarm">Activate Alarm</string>
+    <string name="change_alarm_deactive">Deactivate Alarm</string>
+    <string name="settings">Settings</string>
+    <string name="home" translatable="false">home</string>
+</resources>
