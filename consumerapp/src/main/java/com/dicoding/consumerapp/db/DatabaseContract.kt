@@ -4,7 +4,7 @@ import android.net.Uri
 import android.provider.BaseColumns
 
 object DatabaseContract {
-    const val AUTHORITY = "com.dicoding.githublistapplication"
+    const val AUTHORITY = "com.dicoding.mygithubuserapp"
     const val SCHEME = "content"
     internal class FavoriteColumns : BaseColumns {
         companion object {

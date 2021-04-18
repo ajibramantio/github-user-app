@@ -13,6 +13,33 @@ import com.dicoding.consumerapp.R
 import com.dicoding.consumerapp.model.User
 
 class UserListAdapter(private val listUser: ArrayList<User>) : RecyclerView.Adapter<UserListAdapter.ListViewHolder>() {
+
+    var listFav = ArrayList<User>()
+        set(listNotes) {
+            if (listNotes.size > 0) {
+                this.listUser.clear()
+            }
+            this.listUser.addAll(listFav)
+
+            notifyDataSetChanged()
+        }
+
+    fun addItem(user: User) {
+        this.listFav.add(user)
+        notifyItemInserted(this.listFav.size - 1)
+    }
+
+    fun updateItem(position: Int, user: User) {
+        this.listFav[position] = user
+        notifyItemChanged(position, user)
+    }
+
+    fun removeItem(position: Int) {
+        this.listFav.removeAt(position)
+        notifyItemRemoved(position)
+        notifyItemRangeChanged(position, this.listFav.size)
+    }
+
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ListViewHolder {
         val view: View = LayoutInflater.from(viewGroup.context).inflate(R.layout.item_row_user, viewGroup, false)
         return ListViewHolder(view)
@@ -21,8 +48,8 @@ class UserListAdapter(private val listUser: ArrayList<User>) : RecyclerView.Adap
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val user = listUser[position]
         Glide.with(holder.itemView.context).load(user.avatar_url)
-            .apply(RequestOptions().override(200, 200))
-            .into(holder.imgPhoto)
+                .apply(RequestOptions().override(200, 200))
+                .into(holder.imgPhoto)
         holder.tvUsername.text = user.login
     }
 

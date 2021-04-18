@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                     cursor
                 )
             }
-//            favoriteHelper.close()
+
             binding?.progressBarFavorite?.visibility = View.GONE
             val favorites = deferredNotes.await()
             if (favorites.size > 0) {
